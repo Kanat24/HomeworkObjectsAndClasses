@@ -9,6 +9,10 @@ public class Book {
         this.publicationYear = publicationYear;
     }
 
+    public Book() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -20,16 +24,15 @@ public class Book {
     public int getPublicationYear() {
         return publicationYear;
     }
-    public void setPublicationYear(int publicationYear){
-        this.publicationYear=publicationYear;
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 
     @Override
     public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author=" + author +
-                ", publicationYear=" + publicationYear +
-                '}';
+        return author + " : " + name + " : " +
+                publicationYear +
+                '"';
     }
 }

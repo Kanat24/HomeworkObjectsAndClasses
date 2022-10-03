@@ -17,7 +17,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return "lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'';
+        return '"' + lastName + " " + firstName;
     }
 }
